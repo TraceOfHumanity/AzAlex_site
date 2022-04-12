@@ -1,8 +1,3 @@
-body {
-  margin: 0;
-  font-family: Tahoma, sans-serif;
-}
-
 .intro {
   max-height: 100vh;
   position: relative;
@@ -33,7 +28,6 @@ body {
   z-index: 1;
   padding-bottom: 56.25%;
   object-fit: cover;
-  background-image: url(img/nout.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -59,6 +53,8 @@ body {
 }
 
 body {
+  margin: 0;
+  font-family: Tahoma, sans-serif;
   color: #fff;
   background-color: black;
 }
@@ -305,6 +301,36 @@ iframe:hover{
   z-index: 1;
   animation: animate 10s linear infinite;
 }
+footer{
+  display: flex;
+  height: 100px;
+  z-index: 2222;
+  justify-content: end;
+  align-items: flex-end;
+}
+.logo__soc{
+  filter: drop-shadow(0 0 30px #00ffe1);
+  border: 2px solid rgb(0, 50, 56);
+  width: 30px;
+  margin: 20px;
+  bottom: 0px;
+  right: 0;
+  clip-path: polygon(15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 15px);
+  transition: all 0.8s ease 0s;
+}
+.logo__soc:hover{
+  padding: 5% 10px;
+  margin: 0 25px;
+  text-shadow: 0 0 10px rgb(0, 0, 0), 0 0 20px rgb(255, 255, 255), 0 0 30px rgb(0, 200, 219), 0 0 40px rgb(0, 242, 255);
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+  background: linear-gradient(90deg, #004a57a1, #066c83, #00323d, #004a57a1);
+  background-size: 400%;
+
+  z-index: 1;
+  animation: animate 10s linear infinite;
+}
+
 
 
 

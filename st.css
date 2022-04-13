@@ -67,6 +67,11 @@ a {
   text-decoration: none;
   color: #fff;
 }
+p{
+  text-indent: 1rem;
+  width:100%;
+  text-align:justify;
+}
 
 .header {
   width: 100%;
@@ -169,7 +174,18 @@ h1 {
 
 .materials2 {
   /* border: 2px solid rgb(0, 50, 56); */
+  display: grid;
+  grid-template-columns: 1fr;
   opacity: 0.5;
+}
+.materials2 iframe{
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+}
+.materials2 iframe:hover{
+
+  transform: scale(1);
 }
 .materials3{
   display: grid;
@@ -285,7 +301,7 @@ iframe:hover{
 }
 .popup__text__gallery a{
   font-size: 16px;
-  padding: 5% 10px;
+  padding: 2% 10px;
   margin: 0 25px;
   border: 2px solid rgb(0, 50, 56);
   transition: .5s ease;
@@ -297,10 +313,10 @@ iframe:hover{
   border: 2px solid rgb(255, 255, 255);
   background: linear-gradient(90deg, #004a57a1, #066c83, #00323d, #004a57a1);
   background-size: 400%;
-
   z-index: 1;
   animation: animate 10s linear infinite;
 }
+
 footer{
   display: flex;
   height: 100px;

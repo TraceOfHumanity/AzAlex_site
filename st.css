@@ -174,14 +174,20 @@ h1 {
 
 .materials2 {
   /* border: 2px solid rgb(0, 50, 56); */
+  position: relative;
   display: grid;
   grid-template-columns: 1fr;
   opacity: 0.5;
 }
 .materials2 iframe{
+  position: absolute;
+  
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.9;
+  opacity: 0.4;
+  transition: .5s ease;
 }
 .materials2 iframe:hover{
 
@@ -299,10 +305,13 @@ iframe:hover{
 ::-webkit-scrollbar{
   width: 5px;
 }
+.popup__text__gallery{
+  display: grid;
+}
 .popup__text__gallery a{
   font-size: 16px;
   padding: 2% 10px;
-  margin: 0 25px;
+  margin: 20px;
   border: 2px solid rgb(0, 50, 56);
   transition: .5s ease;
   clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px);
